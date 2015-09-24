@@ -1,0 +1,25 @@
+{
+  "name": "node-math",
+  "version": "1.0.0",
+  "description": "simple node calculator",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khkyler/node-math.git"
+  },
+  "author": "karim kyler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khkyler/node-math/issues"
+  },
+  "homepage": "https://github.com/khkyler/node-math",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "connect": "^3.4.0",
+    "express": "^4.13.3",
+    "request": "^2.63.0"
+  }
+}
