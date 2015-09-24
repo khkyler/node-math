@@ -19,14 +19,16 @@ app.use('/math', function (req, res, next) {
   try {
     mathOper = JSON.parse(req.body).data;
   } catch (e) {
-    console.log('PARSE ERROR: ' + e);
     mathOper = req.body.data;
   }
 
   calc.calculate(mathOper, function (err, result) {
     if (err) {
-      console.log('ERROR: ' + e);
-      return res.end(err);
+      console.log('ERROR: ' + err);
+      res.writeHead(400, {
+        'Content-Type': 'text/plain'
+      });
+      return res.end(err.message);
     }
     res.end(JSON.stringify(result));
   });
