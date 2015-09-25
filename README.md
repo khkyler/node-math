@@ -1,8 +1,8 @@
 # Simple Node Calculator
 
 ## Requirements
-  Node v0.12.7 or compatible releases
-  NPM - any version
+1.  Node v0.12.7 or compatible releases
+2.  NPM - any version
 
 ## Getting started
 
